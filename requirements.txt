@@ -4,3 +4,6 @@ pandas>=2.0
 # Optional: only needed if you want the OpenAI LLM classifier instead of the
 # offline rule-based one. The project runs fine without it.
 # openai>=1.0
+
+# Dev only: test suite (also installed automatically in CI).
+# pytest>=8.0

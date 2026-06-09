@@ -1,5 +1,7 @@
 # AI-Powered Customer Feedback Automation Workflow
 
+[![CI](https://github.com/brandonpisces5687-collab/ai-customer-feedback-automation/actions/workflows/ci.yml/badge.svg)](https://github.com/brandonpisces5687-collab/ai-customer-feedback-automation/actions/workflows/ci.yml)
+
 > Turn a pile of raw customer reviews into a prioritised, business-ready action
 > list — automatically, on a schedule, with no manual tagging.
 

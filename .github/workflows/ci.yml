@@ -1,0 +1,41 @@
+name: CI
+
+# Runs the test suite and a full pipeline smoke-test on every push and PR.
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pytest
+
+      - name: Run unit tests
+        run: pytest -q
+
+      - name: Smoke-test the pipeline end-to-end
+        run: |
+          python src/process_feedback.py --input data/sample_reviews.csv --no-openai
+          test -f data/output/classified_reviews.csv
+          test -f data/output/summary.json
+          test -f data/output/summary_report.md
