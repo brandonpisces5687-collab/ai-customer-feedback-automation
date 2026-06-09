@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Environment / secrets
+.env
+
+# Generated outputs (keep the folder, ignore generated files)
+data/output/*
+!data/output/.gitkeep
+
+# Logs
+logs/*
+!logs/.gitkeep
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
