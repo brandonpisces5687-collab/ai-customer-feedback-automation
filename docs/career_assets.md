@@ -78,7 +78,7 @@ else could actually run it.
 
 This is me bridging analytics → AI automation engineering, one practical project
 at a time. Code + full README on GitHub 👇
-[link]
+https://github.com/brandonpisces5687-collab/ai-customer-feedback-automation
 
 #AIAutomation #n8n #Python #CustomerExperience #DataAnalytics #VoiceOfCustomer
 #AIEngineering #WorkflowAutomation
