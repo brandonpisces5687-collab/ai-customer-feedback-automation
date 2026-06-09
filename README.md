@@ -16,6 +16,23 @@ the customer), now solved as a repeatable, monitored, documented pipeline.
 
 ---
 
+## Screenshots
+
+<!--
+  Add three images to docs/screenshots/ (see docs/screenshots/README.md for a
+  capture guide), then uncomment the lines below. Until the files exist they are
+  intentionally commented out so the README shows no broken images.
+
+  ![n8n workflow](docs/screenshots/n8n_workflow.png)
+  ![Summary report](docs/screenshots/summary_report.png)
+  ![Power BI dashboard](docs/screenshots/powerbi_dashboard.png)
+-->
+
+> 📸 Screenshots pending — see [`docs/screenshots/README.md`](docs/screenshots/README.md)
+> for exactly what to capture (n8n canvas, summary report, Power BI dashboard).
+
+---
+
 ## 1. Business problem
 
 Support and CX teams receive hundreds of reviews across the app, web, and email.
